@@ -1,0 +1,677 @@
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+html,body{
+	height: 100%;
+}
+.clear{
+	clear: both;
+}
+header{
+	background-image: url('bg_01.png');
+	background-size: cover;
+	min-height: 700px;
+}
+.cabecalho{
+	padding:0 2%;
+	min-height: 110px;
+	border-bottom: 2px solid #7ECBC8;
+}
+.logo{
+	float: left;
+	background-image: url('logo.png');
+	background-size: 100% 100%;
+	width: 170px;
+	height: 60px;
+	margin: 30px 0 0 60px;
+}
+.cabecalho1{
+	display: inline-block;
+	float: right;
+}
+.desktop{
+	margin-top: 6%;
+	float: left;
+}
+.desktop>ul{
+	list-style-type: none;
+}
+.desktop>ul>li{
+	float: left;
+	color: white;
+	margin: 0 0 0 20px;
+}
+.desktop>ul>li.selecionado{
+	position: relative;
+	color: #509d87;
+}
+.desktop>ul>li.selecionado>span{
+	width: 22px;
+	height:7px;
+	position: absolute;
+	bottom: -7px;
+	background-color:#509d87;
+}
+.desktop>ul>li>a{
+	text-decoration: none;
+	color: inherit;
+	font-size: 18px;
+	font-family: arial;
+}
+.mobile{
+	cursor: pointer;
+	display: none;
+	float: left;
+	background-image: url('menu.png');
+	background-size: 100% 100%;
+	width: 50px;
+	height: 50px;
+	z-index: 999;
+	margin-top: 30px;
+	margin-right: 20px;
+}
+.mobile>ul{
+	width: 100%;
+	position: absolute;
+	top: 110px;
+	left: 0;
+	background-color:#88EBCD;
+	list-style-type: none;
+}
+.mobile>ul>li:hover{
+	background-color:#78e8f5;
+}
+.mobile>ul>li{
+	float: left;
+	text-align: center;
+	padding: 1.5% 0;
+	color: white;
+	width: 100%;
+	border-top: 2px solid #509d87;
+	border-bottom: 2px solid #509d87;
+}
+.mobile>ul>li>a{
+	text-decoration: none;
+	color: inherit;
+	font-size: 18px;
+	font-family: arial;
+}
+.desktop1{
+	margin-top: 4.9%;
+	float: left;
+	margin-left: 30px;
+}
+.desktop1>span{
+	text-decoration: none;
+	color: white;
+	font-size: 30px;
+	font-family: arial;
+}
+
+.texto{
+	width: 50%;
+	padding:6%;
+	float: left;
+}
+.p1{
+	color:#509d87;
+	font-size: 35px;
+	font-family: arial;
+	line-height: 40px;
+}
+.p2{
+	line-height: 28px;
+	padding-top: 40px;
+	font-size: 15px;
+	font-family: arial;
+	text-align: justify;
+}
+.texto>form{
+	width: 590px;
+	padding: 20px 0;
+}
+.texto>form>input[type=email]{
+	border-radius: 30px;
+	width: 290px;
+	height: 55px;
+	border: 2px solid #509d87;
+	padding:13px;
+	font-size: 14px;
+	font-family: arial;
+	margin-right: 5px;
+	outline: 0;
+}
+.texto>form>input[type=submit]{
+	border-radius: 30px;
+	width: 290px;
+	height: 55px;
+	border: 2px solid #509d87;
+	padding:13px;
+	font-size: 20px;
+	font-family: arial;
+	background-color: #25d2e6;
+	color: white;
+	cursor: pointer;
+	border: 0;
+}
+.texto>span{
+	color:#509d87;
+	font-size: 14px;
+	font-family: arial;
+}
+.fotos{
+	width: 50%;
+	padding: 2% 6%;
+	float:left;
+}
+.fotos>img{
+	width: 45%;
+	border: 10px solid rgba(0,0,0,0);
+}
+
+/*****/
+
+.sessao1{
+	padding: 4% 2%;
+}
+.sessao01{
+	text-align: center;
+}
+.icones{
+	width: 100%;
+}
+.icones01{
+	text-align: left;
+	padding: 2% 0;
+	width: 33%;
+	display: inline-block;
+}
+.icones01>h2{
+	padding-top: 15px;
+	font-size: 22px;
+	font-family: arial;
+}
+.icones01>p{
+	padding-top: 10px;
+	font-size: 14px;
+	font-family: arial;
+	width: 90%;
+}
+/***/
+.rosto{
+	background-image: url('rosto.png');
+	background-size: 100% 100%;
+	width: 50%;
+	height: 400px;
+	float: left;
+}
+.propaganda{
+	float: left;
+	width: 50%;
+}
+.propaganda01{
+	padding: 0 5%;
+}
+.propaganda01>h2{
+	padding-top: 15px;
+	font-size: 30px;
+	font-family: arial;
+	color: #a9c4b8;
+}
+.propaganda01>p{
+	padding-top: 10px;
+	font-size: 14px;
+	font-family: arial;
+	text-align: justify;
+	width: 90%;
+}
+.fundo{
+	position: relative;
+	top: -93px;
+	background-image: url('bg_02.png');
+	background-size:cover;
+	min-height: 600px;
+	padding: 3% 0 0 0;
+}
+.fundo>h2{
+	margin: 200px auto 0 auto;
+	font-size: 32px;
+	font-weight: 300;
+	font-family: arial;
+	text-align: center;
+	width: 70%;
+}
+.fundo>p{
+	padding-top: 10px;
+	font-size: 18px;
+	font-family: arial;
+	text-align: center;
+}
+/****/
+.titulo{
+	padding: 10px 0;
+}
+.titulo>h2{
+	font-size: 27px;
+	font-family: arial;
+	text-align: center;
+}
+.marketing_geral{
+	float: left;
+	width: 50%;
+}
+.marketingfoto{
+	padding: 4% 0 0 2%;
+}
+.marketingfoto1{
+	padding: 4% 0 0 2%;
+}
+.marketingfoto2{
+	padding: 4% 0 0 2%;
+}
+.marketingfoto>img{
+	float: left;
+	width: 200px;
+}
+.marketingfoto>p{
+	margin-top: 100px;
+	padding-left: 25px;
+	float: left;
+	font-size: 18px;
+	font-family: arial;
+	text-align: center;
+	color: #a9c4b8;
+}
+.marketingfoto1>img{
+	float: right;
+	width: 140px;
+}
+.marketingfoto1>p{
+	float: right;
+	padding-right: 40px;
+	margin-top: 60px;
+	font-size: 18px;
+	font-family: arial;
+	text-align: center;
+	color: #a9c4b8;
+}
+.marketingfoto2>img{
+	float: left;
+	width:180px;
+}
+.marketingfoto2>p{
+	float: left;
+	margin-top: 80px;
+	padding-left: 30px;
+	font-size: 18px;
+	font-family: arial;
+	text-align: center;
+	color: #a9c4b8;
+}
+/**/
+.marketing01{
+	float: left;
+	width: 50%;
+	padding: 4% 2%;
+}
+.interativo01{
+	float: left;
+	width: calc(100% - 100px);
+	padding: 1.5% 3%;
+}
+.interativo01>h2{
+	font-size: 23px;
+	font-family: arial;
+	text-align: left;
+	color: #03ca9f;
+}
+.interativo01>p{
+	width: 90%;
+	padding-top: 10px;
+	font-size: 16px;
+	font-family: arial;
+	font-weight: bold;
+	text-align: left;
+	text-align: justify;
+}
+.interativo{
+	float: left;
+	width: 100px;
+	position: relative;
+	height: 100px;
+	border-radius: 50%;
+	border: 1px solid black;
+	margin-bottom: 30px;
+}
+.interativo>span{
+	transform: translate(-50%,-50%);
+	top: 50%;
+	left: 50%;
+	position: absolute;
+	font-size: 20px;
+	font-family: arial;
+	text-align: center;
+}
+.linha{
+	position: absolute;
+	top: 101%;
+	width: 3px;
+	left: 50%;
+	height: 31px;
+	transform: translate(-50%,0);
+	background-color: black;
+}
+
+/***/
+.sessao2{
+	padding: 3%;
+	background-color: #98FCDE;;
+}
+.contato{
+	margin: 0 auto;
+	width: 50%;
+	border-bottom: 2px solid #509d87;;
+}
+.contato>h2{
+	text-align: center;
+	font-family: arial;
+	font-size: 22px;
+	color: #509d87;
+	padding-bottom: 20px;
+}
+.contato>p{
+	text-align: center;
+	font-family: arial;
+	font-size: 15px;
+	color: #509d87;
+	padding-bottom: 10px;
+}
+.formulario{
+	width: 50%;
+	padding-top: 20px;
+	margin: 0 auto;
+}
+.formulario>div{
+	margin: 10px auto;
+}
+.formulario>div>input[type=text]{
+	width: 100%;
+	height: 50px;
+	outline: 0;
+	font-family: arial;
+	font-size: 15px;
+	padding: 15px;
+	border-radius: 30px;
+	border: 2px solid #509d87;
+}
+.formulario>div>input[type=email]{
+	width: 100%;
+	height: 50px;
+	font-family: arial;
+	outline: 0;
+	padding: 15px;
+	border-radius: 30px;
+	font-size: 15px;
+	border: 2px solid #509d87;
+}
+.formulario>div>input[type=submit]{
+	width: 40%;
+	height: 50px;
+	color: white;
+	cursor: pointer;
+	font-size: 20px;
+	font-family: arial;
+	margin: 30px auto;
+	display: block;
+	border-radius: 30px;
+	outline: 0;
+	border:0;
+	background-color: #0ed2a7;
+}
+.formulario>div>textarea{
+	width: 100%;
+	outline: 0;
+	height: 250px;
+	font-family: arial;
+	font-size: 15px;
+	padding: 15px;
+	border-radius: 30px;
+	resize: none;
+	border: 2px solid #509d87;
+}
+
+/******/
+.arrumar{
+	width: 100%;
+	padding: 5% 0;
+}
+.tradicional{
+	width: 50%;
+	text-align: center;
+	float: left;
+	border-right: 3px solid black;
+	padding-left: 20%;
+}
+.tradicional>h2{
+	font-family: arial;
+	font-size: 30px;
+	color: #509d87;
+	padding:0 0 15px 0;
+}
+.tradicional01{
+	display: inline-block;
+	position: relative;
+}
+.linhadiagonal{
+	position: absolute;
+	left:0;
+	top: 12px;
+	width: 100%;
+	transform: rotate(-5deg);
+	height: 4px;
+	background-color: red;
+}
+.tradicional01>p{
+	text-align: center;
+	font-family: arial;
+	font-size: 20px;
+	color: #509d87;
+}
+.invisalign{
+	float: right;
+	width: 50%;
+	padding-right: 20%;
+}
+.invisalign>img{
+	height: 50px;
+	width: 170px;
+	margin: -20px auto 20px auto;
+	display: block;
+}
+.invisalign01>p{
+	text-align: center;
+	font-family: arial;
+	font-size: 20px;
+	color: #509d87;
+}
+/*****/
+
+footer{
+	height: 130px;
+	background-color: #6CC5B2;
+}
+.logo1{
+	margin:0 auto;
+	width: 170px;
+	height: 60px;
+}
+.logo1>img{
+	margin: 32px 0;
+}
+
+/**********/
+
+@media screen and (max-width: 1000px){
+	.desktop{
+		display: none;
+	}
+	.mobile{
+		display: block;
+	}
+	.desktop1{
+		display: none;
+	}
+	.p1,.p2{
+		width: 83%;
+	}
+	.texto>form{
+		width: 50%;
+	}
+	.texto>form>input{
+		margin-bottom: 10px;
+	}
+}
+@media screen and (max-width:888px){
+	.texto{
+		text-align: center;
+		width: 100%;
+		margin: 0 auto;
+		float: none;
+	}
+	.p1,.p2{
+		text-align: center;
+		width:100%;
+	}
+	.texto>form{
+		margin: 0 auto;
+		width: 100%;
+	}
+	.fotos{
+		display: none;
+	}
+	.icones01{
+		text-align: center;
+		width: 100%;
+	}
+	.icones01>p{
+		width: 100%;
+	}
+}
+
+@media screen and (max-width:996px){
+	.marketing_geral{
+		float: none;
+		width: 100%;
+		margin: 20px 0;
+	}
+	.marketing01{
+		float: none;
+		width: 100%;
+	}
+	.marketingfoto{
+		margin: 20px 0;
+	}
+	.marketingfoto1{
+		margin: 20px 0;
+	}
+	.marketingfoto2{
+		margin: 20px 0;
+	}
+	.marketingfoto>img{
+		padding-bottom: 20px;
+		display: block;
+		margin: 0 auto;
+		width: 300px;
+		float: none;
+	}
+	.marketingfoto1>img{
+		padding-bottom: 20px;
+		margin: 0 auto;
+		display: block;
+		width: 300px;
+		float: none;
+	}
+	.marketingfoto2>img{
+		padding-bottom: 20px;
+		margin: 0 auto;
+		display: block;
+		width: 300px;
+		float: none;
+	}
+	.marketingfoto>p{
+		padding: 0;
+		margin: 0;
+		float: none;
+	}
+	.marketingfoto1>p{
+		margin: 0;
+		padding: 0;
+		float: none;
+	}
+	.marketingfoto2>p{
+		padding: 0;
+		margin: 0;
+		float: none;
+	}
+	.interativo{
+		display: none;
+	}
+	.interativo01{
+		float: none;
+		width: 100%;
+	}
+	.interativo01>h2{
+		text-align: center;
+	}
+	.interativo01>p{
+		width: 80%;
+		margin: 0 auto;
+	}
+	.tradicional{
+		float: none;
+		padding: 0;
+		width: 100%;
+		border: 0;
+	}
+	.invisalign{
+		margin-top: 50px;
+		padding:0;
+		float: none;
+		width: 100%;
+	}
+}
+
+@media screen and (max-width: 727px){
+	.propaganda{
+		padding: 2% 0;
+		width: 100%;
+		float: none;
+		margin: 0 auto;
+	}
+	.propaganda01>h2{
+		text-align: center;
+	}
+	.propaganda01>p{
+		width: 70%;
+		margin: 0 auto;
+	}
+	.rosto{
+		margin: 0 auto;
+		float: none;
+		width: 90%;
+	}
+	.fundo{
+		position: static;
+	}
+}
+
+@media screen and (max-width: 840px){
+	.contato{
+		width: 80%;
+	}
+	.formulario{
+		width: 80%;
+	}
+}
